@@ -1,8 +1,7 @@
 
 # trace
 
-  Client-side tracing for measuring tasks such as generating thumbnails,
-  this data can then be sent to the server for reporting.
+  Client-side tracing for performance analysis in production.
 
 ## Installation
 
@@ -29,7 +28,8 @@
 ### .flush()
 
   Return all cycles collected thus far, flushing them for subsequent calls.
-  This method allows you to report the cycles to the server periodicially.
+  This method allows you to report the cycles to the server periodicially,
+  you'll likely want to also transmit user-agent data along with this.
 
 ```js
 var cycle = require('trace');

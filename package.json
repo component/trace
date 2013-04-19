@@ -1,7 +1,7 @@
 {
   "name": "trace-component",
   "repo": "component/trace",
-  "description": "Client-side tracing that reports back to the server",
+  "description": "Client-side tracing for performance analysis",
   "version": "0.0.1",
   "keywords": ["trace", "tracing", "profile", "perf", "performance", "debug", "debugging"],
   "dependencies": {},
