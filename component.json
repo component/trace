@@ -3,7 +3,7 @@
   "repo": "component/trace",
   "description": "Client-side tracing that reports back to the server",
   "version": "0.0.1",
-  "keywords": [],
+  "keywords": ["trace", "tracing", "profile", "perf", "performance", "debug", "debugging"],
   "dependencies": {},
   "development": {},
   "license": "MIT",
