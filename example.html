@@ -1,0 +1,31 @@
+<html>
+<head>
+  <title>Trace</title>
+</head>
+<body>
+  <script src="build/build.js"></script>
+  <script>
+    var cycle = require('trace');
+
+    // pretend to do an upload or something
+    var trace = cycle('upload', 1);
+
+    trace.start('upload');
+    setTimeout(function(){
+      trace.start('thumb');
+      setTimeout(function(){
+        trace.end('thumb');
+        setTimeout(function(){
+          trace.end('upload');
+        }, 500);
+      }, 300);
+    }, 1000);
+
+    setTimeout(function(){
+      console.log('traces:');
+      var arr = cycle.flush();
+      console.log(JSON.stringify(arr, null, 2));
+    }, 2000);
+  </script>
+</body>
+</html>

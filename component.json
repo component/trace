@@ -1,0 +1,14 @@
+{
+  "name": "trace",
+  "repo": "component/trace",
+  "description": "Client-side tracing that reports back to the server",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}
