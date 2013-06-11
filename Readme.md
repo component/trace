@@ -1,4 +1,3 @@
-
 # trace
 
   Client-side tracing for performance analysis in production.
@@ -9,7 +8,7 @@
 
 ## API
 
-### Cycle(id, name)
+### Cycle(name, id)
 
   Initialize a new Tracer with the given `id`
   and `name`. A "cycle" represents N related traces,
